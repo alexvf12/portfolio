@@ -17,6 +17,7 @@ body, html {
     padding: 1.8em;
     position: relative;
     background-color: black;
+    overflow: hidden;
   }
 
   h1{

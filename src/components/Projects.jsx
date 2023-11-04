@@ -133,7 +133,7 @@ const Projects = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            2022 / Vue.js / Tailwind
+            2022 / Vue.js / supaBase
           </a>
         </div>
         <div>
@@ -151,17 +151,17 @@ const Projects = () => {
         <div>
           <a
             className="info"
-            href="https://www.google.com"
+            href="https://portfolio-alexvf12.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            2023 / React / ??????
+            2023 / React
           </a>
         </div>
         <div>
           <a
             className="title"
-            href="https://www.google.com"
+            href="https://portfolio-alexvf12.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
