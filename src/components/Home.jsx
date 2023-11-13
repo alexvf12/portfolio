@@ -1,8 +1,16 @@
 import { Link } from "react-router-dom";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
+import {useTranslation} from "react-i18next"
 
 const Home = () => {
+  const [t, i18n] = useTranslation("global")
   const boxRef = useRef(null);
+  const [showLanguageButtons, setShowLanguageButtons] = useState(true);
+
+  const handleLanguageButtonClick = (language) => {
+    i18n.changeLanguage(language);
+    setShowLanguageButtons(false);
+  };
 
   const handleMouseMove = (e) => {
     const box = boxRef.current;
@@ -36,23 +44,32 @@ const Home = () => {
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
+      
+            {showLanguageButtons && (
+        <div className="language-buttons">
+          <button onClick={() => handleLanguageButtonClick("ca")}>CAT</button>
+          <button onClick={() => handleLanguageButtonClick("es")}>ESP</button>
+          <button onClick={() => handleLanguageButtonClick("en")}>ENG</button>
+        </div>
+      )}
+
       <div className="border-box">
         <h1>Àlex Virgili</h1>
-        <h3>Graphic Designer & Developer</h3>
+        <h3>{t("index.title")}</h3>
       </div>
       <div>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">{t("index.home")}</Link>
           </li>
           <li>
-            <Link to="/projects">Projects</Link>
+            <Link to="/projects">{t("index.projects")}</Link>
           </li>
           <li>
-            <Link to="/about">About me</Link>
+            <Link to="/about">{t("index.about")}</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact">{t("index.contact")}</Link>
           </li>
         </ul>
       </div>

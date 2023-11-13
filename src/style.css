@@ -17,7 +17,8 @@ body, html {
     position: relative;
     background-color: black;
     overflow: hidden;
-  }
+  } 
+
 
   h1{
     margin: 0;
@@ -227,4 +228,27 @@ body, html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+
+/* Idiomas */
+
+.language-buttons {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.language-buttons button {
+  margin: 5px;
+  padding: 10px; /* Ajusta el relleno según tus preferencias */
+  text-align: center; /* Centra el texto horizontalmente */
+  vertical-align: middle; /* Centra el texto verticalmente */
 }

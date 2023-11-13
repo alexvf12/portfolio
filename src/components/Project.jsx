@@ -1,6 +1,8 @@
 import React, { useRef, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
+import {useTranslation} from "react-i18next"
+
 
 // Punta Images
 import punta1 from "../assets/punta3.jpg";
@@ -40,6 +42,7 @@ import joan5 from "../assets/joan4.png";
 const Project = () => {
   const boxRef = useRef(null);
   const { projectId } = useParams(); // Obtén la ID del proyecto desde la URL
+  const [t, i18n] = useTranslation("global")
 
   const [showOverlay, setShowOverlay] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
@@ -122,28 +125,9 @@ const Project = () => {
         <div className="div6">
           <h1> Layout Design for Books</h1>
           <h2> 2022 / Adobe InDesign & Adobe Photoshop</h2>
-          <p>
-            This project, commissioned by Ajuntament de Sitges, involved
-            creating a two-volume book collection and an elegant storage casing.
-            It encompassed various graphic design elements, including designing
-            book covers that visually represented each volume's theme. The
-            casing was crafted for both presentation and protection. Layout
-            design for each volume, each exceeding 500 pages, demanded precision
-            and attention to detail. It ensured a reader-friendly layout,
-            incorporating text, images, and visual elements.
-          </p>
-          <p>
-            El projecte també va incloure l'edició de fotografies amb Adobe
-            Photoshop per millorar la imatge i una integració perfecta en el
-            disseny general. Adobe InDesign es va utilitzar per a tot el disseny
-            de maquetació.
-          </p>
-          <p>
-            The result is a captivating book collection that not only imparts
-            information and knowledge but also entices readers with its
-            appealing design and presentation. This project reflects our
-            commitment to excellence in graphic design.
-          </p>
+          <p>{t("project.books.p1")}</p>
+          <p>{t("project.books.p2")}</p>
+          <p>{t("project.books.p3")}</p>
         </div>
       </div>
     );
@@ -189,29 +173,11 @@ const Project = () => {
         <div className="div6">
           <h1> ArtWorks Vida Festival</h1>
           <h2> 2019 / Adobe Illustrator & Adobe Indesign</h2>
-          <p>
-            This project, undertaken for Vida Festival, an internationally
-            acclaimed music festival held since 2014, involves an extensive
-            array of artworks and designs tailored for the festival's branding
-            and promotion. The scope of work encompasses various design
-            elements, ranging from diverse social media visuals to eye-catching
-            public posters for advertising purposes.
-          </p>
-          <p>
-            The overarching design strategy centers on creating a cohesive
-            visual identity that not only resonates with the audience but also
-            effectively reflects the core values and brand essence of Vida
-            Festival.
-          </p>
-          <p>
-            A substantial portion of the design work is executed through Adobe
-            InDesign, which serves as the primary tool for layout and
-            composition in each design. This meticulous attention to layout
-            ensures that every piece, is both aesthetically pleasing and
-            effectively communicates the festival's essence. Additionally, Adobe
-            Illustrator plays a pivotal role, used for the creation of intricate
-            and captivating vector graphics.
-          </p>
+          <p>{t("project.vida.p1")}</p>
+
+          <p>{t("project.vida.p2")}</p>
+
+          <p>{t("project.vida.p3")}</p>
         </div>
       </div>
     );
@@ -237,29 +203,11 @@ const Project = () => {
         <div className="div6">
           <h1> Corporate Design FM</h1>
           <h2> 2020 / Adobe Illustrator</h2>
-          <p>
-            This project, commissioned by the Vilanova i la Geltrú City Council,
-            centers on the creation of a comprehensive corporate design for
-            their annual festival, La Festa Major. To provide a fresh and unique
-            perspective, the design concept was based on the theme of "sounds."
-            The brand was ingeniously built around onomatopoeic expressions that
-            captured the essence of the festival, presenting them in a comic
-            book style.
-          </p>
-          <p>
-            The entire body of work was meticulously crafted using Adobe
-            Illustrator, where comic-inspired shapes and vibrant colors were
-            employed to vividly represent the lively and joyful atmosphere of
-            the celebration.
-          </p>
-          <p>
-            A diverse range of design deliverables has been produced, including
-            eye-catching posters, informative programs, and merchandise, each of
-            which incorporates the comic-inspired design elements. The result is
-            a corporate design that not only encapsulates the essence of La
-            Fiesta Mayor but also resonates with the community, fostering a
-            strong and memorable visual presence for the event.
-          </p>
+          <p>{t("project.fm.p1")}</p>
+
+          <p>{t("project.fm.p2")}</p>
+
+          <p>{t("project.fm.p3")}</p>
         </div>
       </div>
     );
@@ -305,29 +253,11 @@ const Project = () => {
         <div className="div6">
           <h1> ArtWorks Secret Vida</h1>
           <h2> 2019 / Adobe Illustrator & Adobe Indesign</h2>
-          <p>
-            This project, dedicated to Secret Vida, a subsidiary festival of the
-            renowned Vida Festival brand, entails an expansive array of artwork
-            and design creation aimed at shaping the festival's visual identity.
-            Much like its parent festival, the project encompasses a wide range
-            of design elements, spanning from diverse social media graphics to
-            captivating public posters used for promotional purposes.
-            Additionally, it involves the creation of unique logo illustrations
-            for each of the invited artists, further enhancing the festival's
-            distinctiveness.
-          </p>
-          <p>
-            The overarching design strategy remains consistent with the main
-            Vida Festival, focusing on establishing a strong and unified visual
-            identity that reflects the core values and brand essence of Secret
-            Vida.
-          </p>
-          <p>
-            Adobe InDesign continues to play a pivotal role in this project,
-            serving as the primary tool for meticulous layout and composition in
-            every design. In addition, Adobe Illustrator is instrumental in the
-            creation of intricate and captivating vector graphics.
-          </p>
+          <p>{t("project.secret.p1")}</p>
+
+          <p>{t("project.secret.p2")}</p>
+
+          <p>{t("project.secret.p3")}</p>
         </div>
       </div>
     );
@@ -373,28 +303,11 @@ const Project = () => {
         <div className="div6">
           <h1> Designs Poble Sec</h1>
           <h2> 2023 / Adobe Illustrator & Adobe Photoshop</h2>
-          <p>
-            This project, undertaken in collaboration with a Sitges neighborhood
-            association, encompasses a comprehensive branding initiative and the
-            creation of various merchandise designs. Notable among these designs
-            are the latest annual poster, expertly crafted through a combination
-            of photography and Photoshop, and the recent vintage-style t-shirt
-            design, meticulously crafted using Adobe Illustrator.
-          </p>
-          <p>
-            For the poster, a striking visual composition was achieved,
-            reflecting the essence and goals of the association. The use of
-            photography and Photoshop allowed for the creation of a dynamic and
-            eye-catching design, ensuring that the association's message would
-            be communicated effectively to its audience.
-          </p>
-          <p>
-            The vintage-style t-shirt design, on the other hand, showcases the
-            association's identity with a timeless and appealing aesthetic.
-            Adobe Illustrator was employed to create this design, incorporating
-            intricate details and a sense of nostalgia to resonate with the
-            target demographic.
-          </p>
+          <p>{t("project.poble.p1")}</p>
+
+          <p>{t("project.poble.p2")}</p>
+
+          <p>{t("project.poble.p3")}</p>
         </div>
       </div>
     );
@@ -407,8 +320,7 @@ const Project = () => {
       className="box display"
       ref={boxRef}
       onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
-    >
+      onMouseLeave={handleMouseLeave}>
       <Link className="project" to="/projects">
         <button className="button2">⇦</button>
       </Link>
@@ -420,8 +332,7 @@ const Project = () => {
           onClick={() => {
             console.log("Overlay clicked");
             closeOverlay();
-          }}
-        >
+          }}>
           <img src={selectedImage} alt="Full Size" />
         </div>
       )}

@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import React, { useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Projects = () => {
+  const [t, i18n] = useTranslation("global");
   const boxRef = useRef(null);
   const [isGraphicDesign, setIsGraphicDesign] = useState(false); // Estado para rastrear el tipo de proyectos
 
@@ -45,7 +47,7 @@ const Projects = () => {
         </div>
         <div>
           <Link to={`/projects/1`} className="title">
-            Layout Design for Books
+            {t("projects.graphic.1")}
           </Link>
         </div>
       </li>
@@ -57,7 +59,7 @@ const Projects = () => {
         </div>
         <div>
           <Link to={`/projects/2`} className="title">
-            ArtWorks Vida Festival
+            {t("projects.graphic.2")}
           </Link>
         </div>
       </li>
@@ -69,7 +71,7 @@ const Projects = () => {
         </div>
         <div>
           <Link to={`/projects/3`} className="title">
-            Corporate Design FM
+            {t("projects.graphic.3")}
           </Link>
         </div>
       </li>
@@ -81,7 +83,7 @@ const Projects = () => {
         </div>
         <div>
           <Link to={`/projects/4`} className="title">
-            ArtWorks Secret Vida
+            {t("projects.graphic.4")}
           </Link>
         </div>
       </li>
@@ -93,7 +95,7 @@ const Projects = () => {
         </div>
         <div>
           <Link className="title" to={`/projects/5`}>
-            Designs Poble Sec
+            {t("projects.graphic.5")}
           </Link>
         </div>
       </li>
@@ -109,8 +111,7 @@ const Projects = () => {
             className="info"
             href="https://historic-football-pantheon.netlify.app/"
             target="_blank"
-            rel="noopener noreferrer"
-          >
+            rel="noopener noreferrer">
             2023 / Vanila JS / api-football
           </a>
         </div>
@@ -119,9 +120,8 @@ const Projects = () => {
             className="title"
             href="https://historic-football-pantheon.netlify.app/"
             target="_blank"
-            rel="noopener noreferrer"
-          >
-            Historic Football Pantheon
+            rel="noopener noreferrer">
+            {t("projects.developer.1")}
           </a>
         </div>
       </li>
@@ -131,8 +131,7 @@ const Projects = () => {
             className="info"
             href="https://tool-task-management-alexvf12.vercel.app/"
             target="_blank"
-            rel="noopener noreferrer"
-          >
+            rel="noopener noreferrer">
             2022 / Vue.js / supaBase
           </a>
         </div>
@@ -141,9 +140,8 @@ const Projects = () => {
             className="title"
             href="https://tool-task-management-alexvf12.vercel.app/"
             target="_blank"
-            rel="noopener noreferrer"
-          >
-            Tool Task Management
+            rel="noopener noreferrer">
+            {t("projects.developer.2")}
           </a>
         </div>
       </li>
@@ -153,8 +151,7 @@ const Projects = () => {
             className="info"
             href="https://portfolio-alexvf12.vercel.app/"
             target="_blank"
-            rel="noopener noreferrer"
-          >
+            rel="noopener noreferrer">
             2023 / React
           </a>
         </div>
@@ -163,9 +160,8 @@ const Projects = () => {
             className="title"
             href="https://portfolio-alexvf12.vercel.app/"
             target="_blank"
-            rel="noopener noreferrer"
-          >
-            Portfoli Page
+            rel="noopener noreferrer">
+            {t("projects.developer.3")}
           </a>
         </div>
       </li>
@@ -175,9 +171,8 @@ const Projects = () => {
             className="info"
             href="https://www.google.com"
             target="_blank"
-            rel="noopener noreferrer"
-          >
-            2023 / Angular / ??????
+            rel="noopener noreferrer">
+            2023 / React / OpenTrivia Api
           </a>
         </div>
         <div>
@@ -185,9 +180,8 @@ const Projects = () => {
             className="title"
             href="https://www.google.com"
             target="_blank"
-            rel="noopener noreferrer"
-          >
-            Another Development project
+            rel="noopener noreferrer">
+            {t("projects.developer.4")}
           </a>
         </div>
       </li>
@@ -199,28 +193,27 @@ const Projects = () => {
       className="box display"
       ref={boxRef}
       onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
-    >
+      onMouseLeave={handleMouseLeave}>
       <div>
         <div className="border-box">
           <h1>Àlex Virgili</h1>
-          <h3>Graphic Designer & Developer</h3>
+          <h3>{t("index.title")}</h3>
         </div>
         <div>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">{t("index.home")}</Link>
             </li>
             <li>
               <Link className="project" to="/projects">
-                Projects
+                {t("index.projects")}
               </Link>
             </li>
             <li>
-              <Link to="/about">About me</Link>
+              <Link to="/about"> {t("index.about")}</Link>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <Link to="/contact"> {t("index.contact")}</Link>
             </li>
           </ul>
         </div>
