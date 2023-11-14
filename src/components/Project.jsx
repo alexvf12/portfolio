@@ -1,8 +1,7 @@
 import React, { useRef, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-import {useTranslation} from "react-i18next"
-
+import { useTranslation } from "react-i18next";
 
 // Punta Images
 import punta1 from "../assets/punta3.jpg";
@@ -42,7 +41,7 @@ import joan5 from "../assets/joan4.png";
 const Project = () => {
   const boxRef = useRef(null);
   const { projectId } = useParams(); // Obtén la ID del proyecto desde la URL
-  const [t, i18n] = useTranslation("global")
+  const [t, i18n] = useTranslation("global");
 
   const [showOverlay, setShowOverlay] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
@@ -317,7 +316,7 @@ const Project = () => {
 
   return (
     <section
-      className="box display"
+      className="box2 display scroll"
       ref={boxRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}>
@@ -328,7 +327,7 @@ const Project = () => {
       {projectContent}
       {showOverlay && (
         <div
-          className="overlay"
+          className="overlay "
           onClick={() => {
             console.log("Overlay clicked");
             closeOverlay();

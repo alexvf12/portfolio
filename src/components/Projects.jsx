@@ -47,7 +47,7 @@ const Projects = () => {
         </div>
         <div>
           <Link to={`/projects/1`} className="title">
-            {t("projects.graphic.1")}
+            Traient la Punta
           </Link>
         </div>
       </li>
@@ -59,7 +59,7 @@ const Projects = () => {
         </div>
         <div>
           <Link to={`/projects/2`} className="title">
-            {t("projects.graphic.2")}
+            Vida Festival
           </Link>
         </div>
       </li>
@@ -71,7 +71,7 @@ const Projects = () => {
         </div>
         <div>
           <Link to={`/projects/3`} className="title">
-            {t("projects.graphic.3")}
+            Festa Major VNG
           </Link>
         </div>
       </li>
@@ -83,7 +83,7 @@ const Projects = () => {
         </div>
         <div>
           <Link to={`/projects/4`} className="title">
-            {t("projects.graphic.4")}
+            Secret Vida
           </Link>
         </div>
       </li>
@@ -95,7 +95,7 @@ const Projects = () => {
         </div>
         <div>
           <Link className="title" to={`/projects/5`}>
-            {t("projects.graphic.5")}
+            Poble Sec Sitges
           </Link>
         </div>
       </li>
@@ -188,17 +188,26 @@ const Projects = () => {
     </>
   );
 
+const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
   return (
     <section
-      className="box display"
+      className={`box ${isMobile ? " mobile" : ""}`}
       ref={boxRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}>
-      <div>
+
+      {isMobile ? (
+        // Estructura para dispositivos móviles
+        <>
+          <div className="top">
         <div className="border-box">
           <h1>Àlex Virgili</h1>
           <h3>{t("index.title")}</h3>
         </div>
+        
+      </div>
+      <div className="bottom">
         <div>
           <ul>
             <li>
@@ -217,19 +226,76 @@ const Projects = () => {
             </li>
           </ul>
         </div>
-      </div>
-      <div>
+
+        <div className="projects-container">
         <div className="btn">
-          <button onClick={toggleProjects}>
-            {isGraphicDesign ? "Developer projects" : "Graphic Design projects"}
+          <button
+            onClick={() => setIsGraphicDesign(false)}
+            className={isGraphicDesign ? "active" : ""}>
+            Graphic Design Projects
+          </button>
+          <button
+            onClick={() => setIsGraphicDesign(true)}
+            className={!isGraphicDesign ? "active" : ""}>
+            Web Developer Projects
           </button>
         </div>
+          <ul className="projects">
+            {isGraphicDesign ? graphicDesignProjects : developerProjects}
+          </ul>
+        </div>
+      </div>
+        </>
+      ) : (
+        // Estructura para pantallas más grandes
+        <>
+          <div className="top">
+        <div className="border-box">
+          <h1>Àlex Virgili</h1>
+          <h3>{t("index.title")}</h3>
+        </div>
+        <div className="btn">
+          <button
+            onClick={() => setIsGraphicDesign(false)}
+            className={isGraphicDesign ? "active" : ""}>
+            Graphic Design Projects
+          </button>
+          <button
+            onClick={() => setIsGraphicDesign(true)}
+            className={!isGraphicDesign ? "active" : ""}>
+            Web Developer Projects
+          </button>
+        </div>
+      </div>
+      <div className="bottom">
+        <div>
+          <ul>
+            <li>
+              <Link to="/">{t("index.home")}</Link>
+            </li>
+            <li>
+              <Link className="project" to="/projects">
+                {t("index.projects")}
+              </Link>
+            </li>
+            <li>
+              <Link to="/about"> {t("index.about")}</Link>
+            </li>
+            <li>
+              <Link to="/contact"> {t("index.contact")}</Link>
+            </li>
+          </ul>
+        </div>
+
         <div className="projects-container">
           <ul className="projects">
             {isGraphicDesign ? graphicDesignProjects : developerProjects}
           </ul>
         </div>
       </div>
+        </>
+      )}
+
     </section>
   );
 };
