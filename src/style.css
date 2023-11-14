@@ -405,6 +405,7 @@ button {
 
   .box2 {
     padding: 0;
+    height: auto;
   }
 
   .scroll{

@@ -266,7 +266,7 @@ const Project = () => {
       <div className="border-box parent">
         <div className="div2">
           <img
-            src={joan1}
+            src={joan3}
             alt={"joan1"}
             onClick={() => handleImageClick(joan1)}
           />
@@ -280,7 +280,7 @@ const Project = () => {
         </div>
         <div className="div3">
           <img
-            src={joan3}
+            src={joan1}
             alt={"joan3"}
             onClick={() => handleImageClick(joan3)}
           />
