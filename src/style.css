@@ -9,7 +9,7 @@ html {
 
 .box {
   width: calc(100% - 50px);
-  height: calc(100vh - 50px);
+  height: 90vh;
   margin: 25px;
   border: 0.5px solid #fff;
   box-sizing: border-box;
@@ -21,7 +21,7 @@ html {
 
 .box2 {
   width: calc(100% - 50px);
-  height: calc(100vh - 50px);
+  height: 90vh;
   margin: 25px;
   border: 0.5px solid #fff;
   box-sizing: border-box;
@@ -405,7 +405,6 @@ button {
 
   .box2 {
     padding: 0;
-    height: auto;
   }
 
   .scroll{
