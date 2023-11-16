@@ -1,0 +1,51 @@
+{
+  "index": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About me",
+    "contact": "Contact",
+    "title": "Graphic Designer & Web developer"
+  },
+  "projects": {
+    "graphic": {
+      "1": "Layout Design for Books",
+      "2": "ArtWorks Vida Festival",
+      "3": "Corporate Design FM",
+      "4": "ArtWorks Secret Vida",
+      "5": "Designs Poble Sec"
+    },
+    "developer": {
+      "1": "Historic Football Pantheon",
+      "2": "Tool Task",
+      "3": "Portfolio Page",
+      "4": "Open Trivia"
+    }
+  },
+  "project": {
+    "books": {
+      "p1": "This project, commissioned by Ajuntament de Sitges, involved creating a two-volume book collection and an elegant storage casing. It encompassed various graphic design elements, including designing book covers that visually represented each volume's theme.",
+      "p2": "The project also included photo editing with Adobe Photoshop to enhance the image and seamless integration into the overall design. Adobe InDesign was used for all layout design.",
+      "p3": "The result is a captivating book collection that not only imparts information and knowledge but also entices readers with its appealing design and presentation. This project reflects our commitment to excellence in graphic design."
+    },
+    "vida": {
+      "p1": "This project, undertaken for Vida Festival, an internationally acclaimed music festival held since 2014, involves an extensive array of artworks and designs tailored for the festival's branding and promotion.",
+      "p2": "The overarching design strategy centers on creating a cohesive visual identity that not only resonates with the audience but also effectively reflects the core values and brand essence of Vida Festival.",
+      "p3": "A substantial portion of the design work is executed through Adobe InDesign, which serves as the primary tool for layout and composition in each design. This meticulous attention to layout ensures that every piece is both aesthetically pleasing and effectively communicates the festival's essence. Additionally, Adobe Illustrator plays a pivotal role, used for the creation of intricate and captivating vector graphics."
+    },
+    "fm": {
+      "p1": "This project, commissioned by the Vilanova i la Geltrú City Council, centers on the creation of a comprehensive corporate design for their annual festival, La Festa Major. To provide a fresh and unique perspective, the design concept was based on the theme of 'sounds.'",
+      "p2": "The entire body of work was meticulously crafted using Adobe Illustrator, where comic-inspired shapes and vibrant colors were employed to vividly represent the lively and joyful atmosphere of the celebration.",
+      "p3": "A diverse range of design deliverables has been produced, including eye-catching posters, informative programs, and merchandise, each of which incorporates the comic-inspired design elements. The result is a corporate design that not only encapsulates the essence of La Fiesta Mayor but also resonates with the community, fostering a strong and memorable visual presence for the event."
+    },
+    "secret": {
+      "p1": "This project, dedicated to Secret Vida, a subsidiary festival of the renowned Vida Festival brand, entails an expansive array of artwork and design creation aimed at shaping the festival's visual identity.",
+      "p2": "The overarching design strategy remains consistent with the main Vida Festival, focusing on establishing a strong and unified visual identity that reflects the core values and brand essence of Secret Vida.",
+      "p3": "Adobe InDesign continues to play a pivotal role in this project, serving as the primary tool for meticulous layout and composition in every design. In addition, Adobe Illustrator is instrumental in the creation of intricate and captivating vector graphics."
+    },
+    "poble": {
+      "p1": "This project, undertaken in collaboration with a Sitges neighborhood association, encompasses a comprehensive branding initiative and the creation of various merchandise designs. Notable among these designs are the latest annual poster, expertly crafted through a combination of photography and Photoshop, and the recent vintage-style t-shirt design, meticulously crafted using Adobe Illustrator.",
+      "p2": "For the poster, a striking visual composition was achieved, reflecting the essence and goals of the association. The use of photography and Photoshop allowed for the creation of a dynamic and eye-catching design, ensuring that the association's message would be communicated effectively to its audience.",
+      "p3": "The vintage-style t-shirt design, on the other hand, showcases the association's identity with a timeless and appealing aesthetic. Adobe Illustrator was employed to create this design, incorporating intricate details and a sense of nostalgia to resonate with the target demographic."
+    }
+  }
+}

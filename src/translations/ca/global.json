@@ -1,0 +1,51 @@
+{
+  "index": {
+    "home": "Inici",
+    "projects": "Projectes",
+    "about": "Sobre mi",
+    "contact": "Contacte",
+    "title": "Disenyador Gràfic & Desenvolupador web"
+  },
+  "projects":{
+    "graphic":{
+      "1":"Maquetacó de llibres",
+      "2":"ArtWorks Vida Festival",
+      "3":"Disseny corporatiu FM",
+      "4":"ArtWorks Secret Vida",
+      "5":"Dissenys Poble Sec"
+    },
+    "developer":{
+      "1":"Historic Football PTHN",
+      "2":"Tool Task Management",
+      "3":"Portfoli",
+      "4":"Open Trivia"
+    }
+  },
+    "project": {
+      "books": {
+        "p1": "Aquest projecte, encarregat per l'Ajuntament de Sitges, va implicar la creació d'una col·lecció de llibres de dos volums i una eleganta caixa d'emmagatzematge. Inclou diferents elements de disseny gràfic, com la creació de cobertes de llibres que representen visualment el tema de cada volum.",
+        "p2": "El projecte també va incloure l'edició de fotos amb Adobe Photoshop per millorar la imatge i la seva integració perfecta en el disseny general. Adobe InDesign es va utilitzar per al disseny de la disposició de totes les pàgines.",
+        "p3": "El resultat és una captivadora col·lecció de llibres que no només transmet informació i coneixement, sinó que també sedueix els lectors amb el seu atractiu disseny i presentació. Aquest projecte reflecteix el nostre compromís amb l'excel·lència en el disseny gràfic."
+      },
+      "vida": {
+        "p1": "Aquest projecte, realitzat per al Vida Festival, un festival de música internacionalment reconegut que es celebra des de 2014, involucra una àmplia gamma d'obres d'art i dissenys adaptats per a la marca i promoció del festival.",
+        "p2": "L'estratègia de disseny general es centra en crear una identitat visual cohesionada que no només ressoni amb el públic, sinó que també reflecteixi de manera efectiva els valors fonamentals i l'essència de Vida Festival.",
+        "p3": "Una part substancial del treball de disseny es realitza amb Adobe InDesign, que serveix com a eina principal per a la maquetació i composició de cada disseny. Aquesta atenció meticulosa a la disposició assegura que cada peça sigui estèticament agradable i comuniqui eficaçment l'essència del festival. A més, Adobe Illustrator juga un paper clau per a la creació de gràfics vectorials intricats i captivadors."
+      },
+      "fm": {
+        "p1": "Aquest projecte, encarregat pel Consell Municipal de Vilanova i la Geltrú, se centra en la creació d'un disseny corporatiu integral per a la seva festa anual, La Festa Major. Per proporcionar una perspectiva fresca i única, el concepte de disseny es va basar en el tema dels 'sons'.",
+        "p2": "Tot el conjunt de treball es va elaborar meticulosament amb Adobe Illustrator, on es van utilitzar formes inspirades en còmics i colors vibrants per representar de manera vívida l'atmosfera alegre i animada de la celebració.",
+        "p3": "S'han produït una àmplia gamma de productes de disseny, incloent cartells cridaners, programes informatius i articles de merchandising, cadascun dels quals incorpora elements de disseny inspirats en còmics. El resultat és un disseny corporatiu que no només encapsula l'essència de La Festa Major, sinó que també ressona amb la comunitat, fomentant una presència visual forta i memorable per a l'esdeveniment."
+      },
+      "secret": {
+        "p1": "Aquest projecte, dedicat a Secret Vida, un festival subsidiari de la reconeguda marca Vida Festival, implica una àmplia gamma de creació d'art i disseny destinats a configurar la identitat visual del festival.",
+        "p2": "L'estratègia de disseny general roman constant amb el Vida Festival principal, centrant-se en establir una identitat visual forta i unificada que reflecteixi els valors fonamentals i l'essència de Secret Vida.",
+        "p3": "Adobe InDesign continua jugant un paper fonamental en aquest projecte, servint com a eina principal per a la maquetació meticulosa i la composició en cada disseny. A més, Adobe Illustrator és instrumental en la creació de gràfics vectorials intricats i captivadors."
+      },
+      "poble": {
+        "p1": "Aquest projecte, realitzat en col·laboració amb una associació de veïns de Sitges, abasta una iniciativa de marca integral i la creació de diversos dissenys de productes de merchandising. Destaca entre aquests dissenys el cartell anual més recent, realitzat de manera experta mitjançant una combinació de fotografia i Photoshop, i el disseny de la samarreta d'estil vintage més recent, elaborat minuciosament amb Adobe Illustrator.",
+        "p2": "Pel cartell, es va aconseguir una composició visual impactant que reflexa l'essència i els objectius de l'associació. L'ús de la fotografia i el Photoshop va permetre la creació d'un disseny dinàmic i cridaner, assegurant que el missatge de l'associació es comuniqués de manera efectiva al seu públic.",
+        "p3": "D'altra banda, el disseny de la samarreta d'estil vintage mostra la identitat de l'associació amb una estètica intemporal i atractiva. Adobe Illustrator es va utilitzar per crear aquest disseny, incorporant detalls intricats i una sensació de nostàlgia per connectar amb el públic objectiu."
+        }
+      }
+}
