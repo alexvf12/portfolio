@@ -9,7 +9,7 @@ html {
 
 .box {
   width: calc(100% - 50px);
-  height: calc(100vh - 50px);
+  height: 85vh;
   margin: 25px;
   border: 0.5px solid #fff;
   box-sizing: border-box;
@@ -21,7 +21,7 @@ html {
 
 .box2 {
   width: calc(100% - 50px);
-  height: calc(100vh - 50px);
+  height: 85vh;
   margin: 25px;
   border: 0.5px solid #fff;
   box-sizing: border-box;
@@ -142,7 +142,6 @@ button {
     background-color: transparent;
   }
 }
-
 /* PROJECTS HOVER */
 
 .projects-container ul li:hover div:first-child {
