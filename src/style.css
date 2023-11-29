@@ -9,7 +9,7 @@ html {
 
 .box {
   width: calc(100% - 50px);
-  height: 85vh;
+  height: 92vh;
   margin: 25px;
   border: 0.5px solid #fff;
   box-sizing: border-box;
@@ -21,7 +21,7 @@ html {
 
 .box2 {
   width: calc(100% - 50px);
-  height: 85vh;
+  height: 92vh;
   margin: 25px;
   border: 0.5px solid #fff;
   box-sizing: border-box;
@@ -125,7 +125,7 @@ button {
 }
 
 .projects-container {
-  max-height: 460px;
+  max-height: 510px;
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
@@ -228,7 +228,7 @@ button {
   width: 2.5em;
 }
 
-.about-d{
+.about-d {
   display: flex;
   justify-content: space-between;
 }
@@ -433,5 +433,4 @@ button {
   .box2 {
     height: 85vh;
   }
-
 }
